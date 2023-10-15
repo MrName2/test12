@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы</title>
+</head>
+
+<body>
+    <!-- Тег формы -->
+    <form action="">
+        <p>
+            <!-- Тестовое поле -->
+            login <input type="text" name="login" placeholder="Введите логин" required>
+        </p>
+        <p>
+            <!-- Поле для ввода пароля -->
+            password <input type="password" name="pass" placeholder="Введите пароль" required>
+        </p>
+        <h3>Ваши интересы</h3>
+        <label for="Programming">Программирывание</label>
+        <p>
+            <!-- Выбор нескольких элементов -->
+            <label>
+                <input type="checkbox" name="interess" value="cybersport" checked disabled> Киберспорт
+            </label>
+            <input type="checkbox" name="interess" value="Programming" id="Programming"> Программирывание
+            <input type="checkbox" name="interess" value="Drawing"> Рисование
+        </p>
+        <h3>Способ оплаты</h3>
+        <p>
+            <!-- Выбор одного элемента -->
+            <label><input type="radio" name="pay" value="card"> Карта</label>
+            <label><input type="radio" name="pay" value="Qr"> Qr Код</label>
+            <label><input type="radio" name="pay" value="cash"> Наличными</label>
+        </p>
+        <h3>Ваш город</h3>
+        <p>
+            <!-- выбор из выпадающего списка -->
+            <select name="city">
+                <option value="moscow">Москва</option>
+                <option value="surgut">Сургут</option>
+                <option value="tyumen" selected>Тюмень</option>
+            </select>
+        </p>
+
+        <h3>Введите комментарий</h3>
+        <!-- Поле ввода многострочного текста -->
+        <textarea name="comment" cols="30" rows="10"></textarea>
+        <p>
+            <!-- Кнопка отправить -->
+            <input type="submit" value="Войти">
+            <!-- Кнопка очистить -->
+            <button type="reset">Очистить</button>
+        </p>
+    </form>
+</body>
+
+</html>
